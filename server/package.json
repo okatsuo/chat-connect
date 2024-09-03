@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "A real-time chat client that you can run directly from the terminal.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,5 +12,13 @@
   "license": "MIT",
   "dependencies": {
     "ws": "8.18.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okatsuo/chat-connect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/okatsuo/chat-connect/issues"
+  },
+  "homepage": "https://github.com/okatsuo/chat-connect#readme"
 }
