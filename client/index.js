@@ -6,7 +6,7 @@ import readline from 'node:readline'
 import WebSocket from 'ws'
 import chalk from 'chalk'
 
-const serverUrl = 'ws://localhost:8000'
+const serverUrl = 'https://chat-connect-930i.onrender.com'
 
 let ws
 
