@@ -1,6 +1,6 @@
 {
   "name": "chat-connect",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A real-time chat client that you can run directly from the terminal.",
   "main": "index.js",
   "type": "module",
