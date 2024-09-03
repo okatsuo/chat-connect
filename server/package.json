@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["chat", "real-time", "cmd", "prompt", "bash", "terminal", "websocket", "ws"],
+  "author": "Rafael Gonçalves",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "8.18.0"
+  }
+}
