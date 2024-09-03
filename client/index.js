@@ -13,6 +13,7 @@ let ws
 const connectToServer = (username, room) => {
   if (!username || !room) return console.log('Username and room are required')
 
+  process.stdout.write(chalk.yellow('Connecting to server...'))
   ws = new WebSocket(`${serverUrl}?username=${username}&room=${room}`)
 
   ws.on('message', (msg) => {
@@ -43,6 +44,9 @@ rl.question('Username: ', (username) => {
 const promptUser = () => {
   rl.question('', (msg) => {
     if (msg === '/exit') return cleanup()
+    readline.moveCursor(process.stdout, 0, -1)
+    readline.clearLine(process.stdout, 1)
+    console.log(chalk.blue(`You: ${msg}`))
     sendNewMessage(msg)
     promptUser()
   })
@@ -69,7 +73,7 @@ const sendNewMessage = (msg) => {
 
 const cleanup = () => {
   if (ws) ws.close()
-    rl.close()
+  rl.close()
   process.exit(0)
 }
 
